@@ -1,6 +1,7 @@
 (column-number-mode 1)
 (setq-default indent-tabs-mode nil)
-(load-theme 'naysayer)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'naysayer t)
 (setq-default tab-width 4)
 (require 'package)
 (add-to-list 'package-archives
@@ -24,3 +25,4 @@
  ;; If there is more than one, they won't work right.
  )
 (tabbar-mode)
+(transient-mark-mode 0)
